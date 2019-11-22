@@ -30,6 +30,7 @@ export function itemsFetchData(url){
                 }
                 dispatch(itemsIsLoading(false));
 
+
                 return response;
             })
             .then((response) => response.json())
