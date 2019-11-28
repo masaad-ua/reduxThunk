@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import ItemList from './components/itemList'
+import ListOfUsers from './components/listOfUsers'
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 
@@ -11,11 +12,14 @@ class App extends Component {
 
     render() {
         return (
-            <Prvider store={store}>
+            <Provider store={store}>
                 <div>
                     <ItemList/>
                 </div>
-            </Prvider>
+                <div>
+                    <ListOfUsers/>
+                </div>
+            </Provider>
 
         )
     }
